@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Estilo del encabezado */
+header {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+header .header-content h1 {
+    font-size: 2.8em;
+    margin: 15px 0;
+}
+
+header .header-content p {
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+/* Estilo del menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #6a11cb;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    display: none;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background: #6a11cb;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+/* Estilos principales */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+}
